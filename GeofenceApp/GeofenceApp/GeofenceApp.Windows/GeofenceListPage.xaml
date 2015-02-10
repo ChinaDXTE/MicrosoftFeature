@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="GeofenceApp.GeofenceListPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeofenceApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="page">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding geo_GeofenceList}" Style="{StaticResource HeaderTextBlockStyle}" Margin="0,10,0,0"/>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Margin="0,10,0,0">
+            <TextBlock x:Name="noItemHintTextBlock" Text="{Binding NoItemHint}" Style="{StaticResource BasicTextStyle}" Margin="10,10,10,10" Visibility="Collapsed"/>
+            <ListBox Name="RegisteredGeofenceListBox"
+                        ItemsSource="{Binding}"
+                        ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                        ScrollViewer.HorizontalScrollMode="Disabled"
+                        ScrollViewer.VerticalScrollBarVisibility="Auto"
+                        ScrollViewer.VerticalScrollMode="Auto"  Margin="10,10,10,0"
+                        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Style="{StaticResource ListBoxStyle1}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Button BorderThickness="0" Style="{StaticResource ButtonStyle1}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                <Button.Content>
+                                    <TextBlock FontSize="20">
+                                        <Run Text="{Binding Id}" FontSize="26"/>
+                                        <LineBreak/>
+                                        <Run Text="("/>
+                                        <Run Text="{Binding Latitude}"/>
+                                        <Run Text=", "/>
+                                        <Run Text="{Binding Longitude}"/>
+                                        <Run Text=", "/>
+                                        <Run Text="{Binding Radius}"/>
+                                        <Run Text=")"/>
+                                    </TextBlock>
+                                </Button.Content>
+                                <Button.Flyout>
+                                    <MenuFlyout>
+                                        <MenuFlyoutItem Text="{Binding Path=DataContext.geo_Remove,ElementName=page}" Tag="{Binding Id}" Click="OnRemoveGeofenceItem"/>
+                                    </MenuFlyout>
+                                </Button.Flyout>
+                            </Button>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Page>

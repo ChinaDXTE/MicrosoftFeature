@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="GeofenceApp.MapPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeofenceApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Bing.Maps"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!--请替换Credentials属性的值为自己的Maps Key值-->
+        <Maps:Map x:Name="myMap" HomeRegion="Us" Credentials="AuzpALKBnHHDJiFy3guGD2_oBxPglMe2LTmw3RllaO3xkRtUoIfC-R7WuyCk3li7" Tapped="myMap_Tapped" RightTapped="myMap_RightTapped"/>
+    </Grid>
+</Page>

@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="GeofenceApp.SettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeofenceApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding geo_Setting}" Style="{StaticResource HeaderTextBlockStyle}" Margin="0,10,0,0"/> 
+        <local:SettingPanel x:Name="settingPanel" Grid.Row="1" Margin="0,7,0,0"/>
+    </Grid>
+</Page>

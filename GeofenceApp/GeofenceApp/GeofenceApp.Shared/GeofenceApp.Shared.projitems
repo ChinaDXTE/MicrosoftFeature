@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>56050f7d-418e-4d20-a06a-c6d0f4ca299f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>GeofenceApp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)AddGeofencePage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\GeofenceBackgroundTaskManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\GeofenceManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\GlobalGeolocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\MessageDialogWithLanguage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GeofenceListPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\FilePicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\Global.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\Globalization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\LocalSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\Notifications.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\NotificationsEx\BadgeContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\NotificationsEx\Common.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\NotificationsEx\ContentInterfaces.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\NotificationsEx\TileContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\NotificationsEx\ToastContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\Push.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\Roaming.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Library\ShareContractEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\GeofenceItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\AddGeofenceIcon.xaml.cs">
+      <DependentUpon>AddGeofenceIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\CurrentLocationIcon.xaml.cs">
+      <DependentUpon>CurrentLocationIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UserControls\SettingPanel.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)style\style.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UserControls\AddGeofenceIcon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UserControls\CurrentLocationIcon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\en-us\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\zh-cn\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\1.png.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\largetile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\LockScreenLogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo.scale-310-150.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo.scale-310-310.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\mediumtile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\mediumtile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SmallLogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SmallLogo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\smalltile-Phone-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\smalltile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\splash-Phone-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\splash-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\squaretile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\storelogo-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\StoreLogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\StoreLogo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\tile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WideLogo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\0\150_150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\0\310_150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\1\150_150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\1\310_150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\2\150_150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\2\310_150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\3\150_150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\3\310_150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\4\150_150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\4\310_150.jpg" />
+  </ItemGroup>
+</Project>

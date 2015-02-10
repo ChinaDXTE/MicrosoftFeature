@@ -1,0 +1,22 @@
+﻿<UserControl
+    x:Class="GeofenceApp.AddGeofenceIcon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeofenceApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="119.667" 
+    Height="60.333">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid x:Name="grid" Tapped="grid_Tapped" Margin="-54,-55,54,55">
+            <Path Fill="#FF5BC9D4" UseLayoutRounding="False" Data="M64.0005,0 L75.6733,17.667 L115,17.667 C117.761,17.667 120,19.9056 120,22.667 L120,52.667 C120,55.4284 117.761,57.667 115,57.667 L5,57.667 C2.23857,57.667 0,55.4284 0,52.667 L0,22.667 C0,19.9056 2.23857,17.667 5,17.667 L52.3277,17.667 z" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Width="120" Height="57.667">
+                <Path.RenderTransform>
+                    <CompositeTransform Rotation="180"/>
+                </Path.RenderTransform>
+            </Path>
+            <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Text="{Binding geo_AddGeofenceIconText}" FontSize="16" VerticalAlignment="Top" Margin="0,10,0,0"/>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="GeofenceApp.AddGeofencePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeofenceApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel 包含应用程序的名称和页标题-->
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="{Binding geo_AddGeofencePageTitle}" Style="{StaticResource HeaderTextBlockStyle}" Margin="0,10,0,0"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="479*"/>
+                <RowDefinition Height="239*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="ContentPanel" Margin="0,0,0,26">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Style="{StaticResource TextStyle1}">
+        			<Run Text="{Binding geo_Latitude}"/>
+        			<Run Text="："/>
+                </TextBlock>
+                <TextBox x:Name="txb_latitude" Grid.Column="1" Style="{StaticResource TextBoxStyle1}"/>
+                <TextBlock Style="{StaticResource TextStyle1}" Grid.Row="1" Width="120">
+        			<Run Text="{Binding geo_Longitude}"/>
+        			<Run Text="："/>
+                </TextBlock>
+                <TextBox x:Name="txb_longitude" Grid.Column="1" Grid.Row="1" Style="{StaticResource TextBoxStyle1}"/>
+                <TextBlock Style="{StaticResource TextStyle1}" Grid.Row="2">
+        			<Run Text="{Binding geo_Name}"/>
+        			<Run Text="："/>
+                </TextBlock>
+                <TextBox x:Name="txb_identifier" Grid.Column="1" Grid.Row="2" Style="{StaticResource TextBoxStyle1}"/>
+                <TextBlock Style="{StaticResource TextStyle1}" Grid.Row="3">
+        			<Run Text="{Binding geo_Radius}"/>
+        			<Run Text="："/>
+                </TextBlock>
+                <TextBox x:Name="txb_radius" PlaceholderText="{Binding geo_RadiusPlaceholderText}" Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBoxStyle1}" InputScope="Number"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="361*"/>
+                    <ColumnDefinition Width="297*"/>
+                    <ColumnDefinition Width="708*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_create" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Content="{Binding geo_Create}" Click="btn_create_Click"/>
+                <Button x:Name="btn_cancel"  Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Content="{Binding geo_Cancel}" Click="btn_cancel_Click"/>
+            </Grid>
+        </Grid>
+
+        <!--ContentPanel - 在此处放置其他内容-->
+    </Grid>
+</Page>
