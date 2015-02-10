@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>33d10df9-2ce5-4842-af83-ca2de646ae90</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Feature</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AudioTaskManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Background\BackgroundDownload.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Background\BackgroundTransfers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Background\BackgroundUpload.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContinuationManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\SampleDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FileEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FilePicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Filter\FilterItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Filter\FilterItems.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Filter\FilterManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Global.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globalization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LocalSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Notifications.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NotificationsEx\BadgeContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NotificationsEx\Common.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NotificationsEx\ContentInterfaces.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NotificationsEx\TileContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NotificationsEx\ToastContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Push.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Roaming.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShareContractEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VisualTreeExtensions.cs" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appbar.camera.flash.auto.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appbar.camera.flash.off.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appbar.camera.flash.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appbar.camera.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appbar.camera.record.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appbar.camera.save.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appbar.camera.send.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appbar.camera.switch.invert.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\appbar.camera.switch.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\camera.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\filePicker.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\icon_meihua.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\largetile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\mediumtile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\mediumtile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\settings.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SmallLogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SmallLogo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\smalltile-Phone-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\smalltile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\splash-Phone-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\splash-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\squaretile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\storelogo-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\StoreLogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\StoreLogo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\tile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WideLogo.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\windows-bag.png" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\LightGray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MediumGray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DarkGray.png" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\en-us\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\zh-cn\Resources.resw" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="CameraSample.PictureEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CameraSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <DataTemplate x:Name="listdataTemplate">
+            <Grid Width="96" Height="96" Background="{Binding Backgroundcolor}">
+                <Image Source="ms-appx:///Assets/icon_meihua.png" Width="58" Height="58" Stretch="UniformToFill" Margin="0,10,0,20"/>
+                <TextBlock Text="{Binding FilterName}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,4"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid>
+        <Image x:Name="image"/>
+        <ProgressRing x:Name="progressRing" VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
+        <StackPanel VerticalAlignment="Bottom" Margin="0,0,0,60">
+            <ListView x:Name="listEffect" ItemTemplate="{StaticResource listdataTemplate}" SelectionChanged="listEffect_SelectionChanged" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Auto">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" Background="Black" Opacity="0.7"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+        </StackPanel>
+        <Grid VerticalAlignment="Bottom" Height="60" Background="Black" Opacity="0.6">
+            <AppBarButton x:Name="AppbarCameraSave" HorizontalAlignment="Center" Tapped="AppbarCameraSave_Tapped">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="ms-appx:///Assets/appbar.camera.save.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="AppbarCameraShared" HorizontalAlignment="Right" Tapped="AppbarCameraShared_Tapped">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="ms-appx:///Assets/appbar.camera.send.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </Grid>
+    </Grid>
+</Page>

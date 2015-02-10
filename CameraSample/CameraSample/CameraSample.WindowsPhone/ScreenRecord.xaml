@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="CameraSample.ScreenRecord"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CameraSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" PointerMoved="Grid_PointerMoved">
+            <MediaElement Name="mediaElement" CurrentStateChanged="mediaElement_CurrentStateChanged"></MediaElement>
+            <Canvas Name="_canvas">
+                <Ellipse Name="_circle" Width="50" Height="50" Fill="Blue" Canvas.Left="200" Canvas.Top="200"/>
+            </Canvas>
+        </Grid>
+        <Grid Grid.Row="1" VerticalAlignment="Bottom" Background="Black" Opacity="0.7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <AppBarButton x:Name="AppbarPaly" Grid.Column="0" Label="重播" VerticalAlignment="Center" 
+                          Icon="Play" Tapped="AppbarPaly_Tapped"/>
+            <AppBarButton x:Name="AppbarRecord" Grid.Column="1" Label="录屏" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="AppbarRecord_Tapped">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="ms-appx:///Assets/appbar.camera.record.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="AppbarSave" Grid.Column="2" Label="保存" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                           Icon="Save" Tapped="AppbarSave_Tapped"/>
+            <AppBarButton x:Name="AppbarShared" Grid.Column="3" Label="分享" HorizontalAlignment="Right" Tapped="AppbarShared_Tapped">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="ms-appx:///Assets/appbar.camera.send.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+
+        </Grid>
+    </Grid>
+</Page>
