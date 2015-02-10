@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="1169b3c9-bfaf-410c-acce-40003db555c1" Publisher="CN=MengLei" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>NewsSample.Windows</DisplayName>
+    <PublisherDisplayName>Neusoft</PublisherDisplayName>
+    <Logo>Assets/StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="NewsSample.Windows.App">
+      <m2:VisualElements DisplayName="NewsSample" Square150x150Logo="Assets/squaretile-sdk.png" Square30x30Logo="Assets/smalltile-Windows-sdk.png" Description="NewsSample.Windows" ForegroundText="light" BackgroundColor="#00b2f0" ToastCapable="true">
+        <m2:LockScreen Notification="badge" BadgeLogo="Assets/BadgeLogo.png" />
+        <m2:DefaultTile Wide310x150Logo="Assets/WideLogo.png" Square70x70Logo="Assets\mediumtile-Windows-sdk.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\splash-Windows-sdk.png" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
+      </m2:VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileTypeAssociation">
+          <FileTypeAssociation Name="file">
+            <DisplayName>file</DisplayName>
+            <SupportedFileTypes>
+              <FileType>.html</FileType>
+            </SupportedFileTypes>
+          </FileTypeAssociation>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="HubPage.xaml">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="removableStorage" />
+  </Capabilities>
+</Package>

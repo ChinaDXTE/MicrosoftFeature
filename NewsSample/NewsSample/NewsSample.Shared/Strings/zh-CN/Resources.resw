@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DescriptionHeader.Text" xml:space="preserve">
+    <value>说明文本:</value>
+  </data>
+  <data name="Group1Subtitle" xml:space="preserve">
+    <value>组子标题: 1</value>
+  </data>
+  <data name="Group1Title" xml:space="preserve">
+    <value>组标题: 1</value>
+  </data>
+  <data name="Group2Subtitle" xml:space="preserve">
+    <value>组子标题: 2</value>
+  </data>
+  <data name="Group2Title" xml:space="preserve">
+    <value>组标题: 2</value>
+  </data>
+  <data name="Group3Subtitle" xml:space="preserve">
+    <value>组子标题: 3</value>
+  </data>
+  <data name="Group3Title" xml:space="preserve">
+    <value>组标题: 3</value>
+  </data>
+  <data name="Group4Subtitle" xml:space="preserve">
+    <value>组子标题: 4</value>
+  </data>
+  <data name="Group4Title" xml:space="preserve">
+    <value>组标题: 4</value>
+  </data>
+  <data name="Group5Subtitle" xml:space="preserve">
+    <value>组子标题: 5</value>
+  </data>
+  <data name="Group5Title" xml:space="preserve">
+    <value>组标题: 5</value>
+  </data>
+  <data name="Group6Subtitle" xml:space="preserve">
+    <value>组子标题: 6</value>
+  </data>
+  <data name="Group6Title" xml:space="preserve">
+    <value>组标题: 6</value>
+  </data>
+  <data name="GroupDescription" xml:space="preserve">
+    <value>组说明: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante</value>
+  </data>
+  <data name="Item1Subtitle" xml:space="preserve">
+    <value>项子标题: 1</value>
+  </data>
+  <data name="Item1Title" xml:space="preserve">
+    <value>项标题: 1</value>
+  </data>
+  <data name="Item2Subtitle" xml:space="preserve">
+    <value>项子标题: 2</value>
+  </data>
+  <data name="Item2Title" xml:space="preserve">
+    <value>项标题: 2</value>
+  </data>
+  <data name="Item3Subtitle" xml:space="preserve">
+    <value>项子标题: 3</value>
+  </data>
+  <data name="Item3Title" xml:space="preserve">
+    <value>项标题: 3</value>
+  </data>
+  <data name="Item4Subtitle" xml:space="preserve">
+    <value>项子标题: 4</value>
+  </data>
+  <data name="Item4Title" xml:space="preserve">
+    <value>项标题: 4</value>
+  </data>
+  <data name="Item5Subtitle" xml:space="preserve">
+    <value>项子标题: 5</value>
+  </data>
+  <data name="Item5Title" xml:space="preserve">
+    <value>项标题: 5</value>
+  </data>
+  <data name="Item6Subtitle" xml:space="preserve">
+    <value>项子标题: 6</value>
+  </data>
+  <data name="Item6Title" xml:space="preserve">
+    <value>项标题: 6</value>
+  </data>
+  <data name="Item7Subtitle" xml:space="preserve">
+    <value>项子标题: 7</value>
+  </data>
+  <data name="Item7Title" xml:space="preserve">
+    <value>项标题: 7</value>
+  </data>
+  <data name="Item8Subtitle" xml:space="preserve">
+    <value>项子标题: 8</value>
+  </data>
+  <data name="Item8Title" xml:space="preserve">
+    <value>项标题: 8</value>
+  </data>
+  <data name="ItemContent" xml:space="preserve">
+    <value>Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat</value>
+  </data>
+  <data name="ItemContentFormat" xml:space="preserve">
+    <value>项内容:  {0}\n\n{0}\n\n{0}\n\n{0}\n\n{0}\n\n{0}\n\n{0}</value>
+  </data>
+  <data name="ItemDescription" xml:space="preserve">
+    <value>项描述: Pellentesque porta, mauris quis interdum vehicula, urna sapien ultrices velit, nec venenatis dui odio in augue. Cras posuere, enim a cursus convallis, neque turpis malesuada erat, ut adipiscing neque tortor ac erat.</value>
+  </data>
+  <data name="ItemSubTitle.Text" xml:space="preserve">
+    <value>项子标题</value>
+  </data>
+  <data name="ItemTitle.Text" xml:space="preserve">
+    <value>项标题</value>
+  </data>
+  <data name="LongText.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper.</value>
+    <comment>“Section1DescriptionText”重复了三次。</comment>
+  </data>
+  <data name="Section1DescriptionText.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper.</value>
+  </data>
+  <data name="Section1Header.Header" xml:space="preserve">
+    <value>今日头条</value>
+  </data>
+  <data name="Section1Subtitle.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit nonumy sed consectetuer ising elit, sed diam</value>
+  </data>
+  <data name="Section2Header.Header" xml:space="preserve">
+    <value>最近更新</value>
+  </data>
+  <data name="Section3Header.Header" xml:space="preserve">
+    <value>新闻分类</value>
+  </data>
+  <data name="Section3Subtitle.Text" xml:space="preserve">
+    <value>节子标题</value>
+  </data>
+  <data name="Section4Header.Header" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="Section2UnderTitle.Text" xml:space="preserve">
+    <value>Quisque in porta lorem dolor amet sed consectetuer ising elit, sed diam non my nibh uis mod wisi quip.</value>
+  </data>
+  <data name="NavigationFailedExceptionMessage" xml:space="preserve">
+    <value>导航失败。</value>
+  </data>
+  <data name="Hub.Header" xml:space="preserve">
+    <value>新闻类示例</value>
+  </data>
+  <data name="HubSection1.Header" xml:space="preserve">
+    <value>头条新闻</value>
+  </data>
+  <data name="HubSection2.Header" xml:space="preserve">
+    <value>最近更新</value>
+  </data>
+  <data name="HubSection3.Header" xml:space="preserve">
+    <value>新闻分类</value>
+  </data>
+  <data name="HubSection4.Header" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="ChangeLang.Text" xml:space="preserve">
+    <value>更改语言</value>
+  </data>
+  <data name="FavList.Text" xml:space="preserve">
+    <value>收藏列表</value>
+  </data>
+  <data name="RecentRead.Text" xml:space="preserve">
+    <value>最近阅读</value>
+  </data>
+  <data name="FavListTitle" xml:space="preserve">
+    <value>我的收藏</value>
+  </data>
+  <data name="ReadListTitle" xml:space="preserve">
+    <value>最近阅读</value>
+  </data>
+  <data name="AddFav.Label" xml:space="preserve">
+    <value>添加收藏</value>
+  </data>
+  <data name="AddFavSuccessText" xml:space="preserve">
+    <value>添加收藏成功</value>
+  </data>
+  <data name="HubTitleText" xml:space="preserve">
+    <value>新闻示例</value>
+  </data>
+  <data name="RemoveFav.Label" xml:space="preserve">
+    <value>移出收藏</value>
+  </data>
+  <data name="RemoveFavSuccessText" xml:space="preserve">
+    <value>移出收藏成功</value>
+  </data>
+  <data name="Header.Text" xml:space="preserve">
+    <value>新闻示例</value>
+  </data>
+  <data name="ShareIcon.Label" xml:space="preserve">
+    <value>分享</value>
+  </data>
+  <data name="ShareDesc" xml:space="preserve">
+    <value>分享给你一个新闻</value>
+  </data>
+  <data name="ShareTitle" xml:space="preserve">
+    <value>新闻示例</value>
+  </data>
+  <data name="SaveSD.Label" xml:space="preserve">
+    <value>保存新闻</value>
+  </data>
+  <data name="HTMLContent" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang='en' xmlns='http://www.w3.org/1999/xhtml'&gt;&lt;head&gt;    &lt;meta charset='utf-8' /&gt;    &lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;    使用 WebView 控件承载应用中的 Web 内容。请注意，从 Windows 8.1 开始，控件行为已经更改。有关详细信息，请参见以下内容。&lt;/div&gt;&lt;br/&gt;&lt;div&gt;    WebView 不是 Control 子类且没有控件模板。显示区域由 Width 和 Height 属性约束。&lt;/div&gt;&lt;br/&gt;&lt;div&gt;    虽然 WebView 不是 Control 子类，它可以接收键盘焦点和 tab 键顺序参与。它提供一 Focus 方法和 GotFocus 和 LostFocus 事件，但它没有与 Tab 键相关的属性。它在 Tab 键顺序中的位置与它在 XAML 文档顺序中的位置相同。Tab 键序列包括 WebView 内容中所有可以接收输入焦点的元素。&lt;/div&gt;&lt;br/&gt;&lt;img src="ms-appx-web:///Assets/WebImg.png"  align="center" alt="这里是一幅图片"/ onclick='onImgClick(this)'&gt;&lt;br/&gt;&lt;br/&gt;&lt;div&gt;    如事件表中所示，WebView 不支持从 UIElement 继承的大多数用户输入事件，如 KeyDown、KeyUp 和 PointerPressed。 此问题的常见解决方法是将 WebView.InvokeScript（在 Windows 8.1 中以 InvokeScriptAsync 开头）与 eval 一起使用，以便使用 HTML 事件处理程序；以及使用 HTML 事件处理程序中的 window.external.notify，以便使用 WebView.ScriptNotify 来通知应用程序。&lt;/div&gt;&lt;br/&gt;&lt;div&gt;    此外，WebView 目前不支持某些 HTML5 功能，包括 AppCache、IndexedDB、对剪贴板的编程访问或地理位置。&lt;/div&gt;&lt;br/&gt;&lt;script type='text/javascript'&gt;var onImgClick = function(a){window.external.notify(a.src);};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="SaveSDSuccessText" xml:space="preserve">
+    <value>保存新闻文件成功</value>
+  </data>
+  <data name="NoSD" xml:space="preserve">
+    <value>无可用SD卡</value>
+  </data>
+  <data name="LoadingGrid.Text" xml:space="preserve">
+    <value>正在加载</value>
+  </data>
+  <data name="FavListSubtitle" xml:space="preserve">
+    <value>这里是收藏列表</value>
+  </data>
+  <data name="ReadListSubtitle" xml:space="preserve">
+    <value>这里是最近阅读</value>
+  </data>
+  <data name="Section3HeaderText.Text" xml:space="preserve">
+    <value>新闻列表</value>
+  </data>
+  <data name="HubSection1HeaderText" xml:space="preserve">
+    <value>今日头条</value>
+  </data>
+  <data name="HubSection2HeaderText" xml:space="preserve">
+    <value>最近更新</value>
+  </data>
+  <data name="HubSection3HeaderText" xml:space="preserve">
+    <value>新闻分类</value>
+  </data>
+  <data name="HubSection4HeaderText" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="NewsContentPara1" xml:space="preserve">
+    <value>使用 WebView 控件承载应用中的 Web 内容。请注意，从 Windows 8.1 开始，控件行为已经更改。有关详细信息，请参见以下内容。</value>
+  </data>
+  <data name="NewsContentPara2" xml:space="preserve">
+    <value>WebView 不是 Control 子类且没有控件模板。显示区域由 Width 和 WebView 不是 Control 子类且没有控件模板。显示区域由 Width 和 Height 属性约束。</value>
+  </data>
+  <data name="NewsContentPara3" xml:space="preserve">
+    <value>虽然 WebView 不是 Control 子类，它可以接收键盘焦点和 tab 键顺序参与。它提供一 Focus 方法和 GotFocus 和 LostFocus 事件，但它没有与 Tab 键相关的属性。它在 Tab 键顺序中的位置与它在 XAML 文档顺序中的位置相同。Tab 键序列包括 WebView 内容中所有可以接收输入焦点的元素。</value>
+  </data>
+  <data name="NewsContentPara4" xml:space="preserve">
+    <value>如事件表中所示，WebView 不支持从 UIElement 继承的大多数用户输入事件，如 KeyDown、KeyUp 和 PointerPressed。 此问题的常见解决方法是将 WebView.InvokeScript（在 Windows 8.1 中以 InvokeScriptAsync 开头）与 eval 一起使用，以便使用 HTML 事件处理程序；以及使用 HTML 事件处理程序中的 window.external.notify，以便使用 WebView.ScriptNotify 来通知应用程序。</value>
+  </data>
+  <data name="NewsContentPara5" xml:space="preserve">
+    <value>此外，WebView 目前不支持某些 HTML5 功能，包括 AppCache、IndexedDB、对剪贴板的编程访问或地理位置。</value>
+  </data>
+  <data name="NewsContentPara10" xml:space="preserve">
+    <value>语义式缩放交互通过收缩和拉伸手势（将手指分开即可放大，将手指并拢即可缩小），或者通过按住 Ctrl 键的同时滚动鼠标滚轮，或者通过按住 Ctrl 键（如果没有数字键盘，则使用 Shift 键）的同时按加号 (+) 或减号 (-) 键的方式实现。</value>
+  </data>
+  <data name="NewsContentPara6" xml:space="preserve">
+    <value>语义式缩放控件可使用户在同一数据集的两个不同语义式视图之间缩放。一个视图包含按某些关键字分组的项目列表，另一个视图包含组关键字列表。点击组关键字可重新放大到该组的项目。如果数据集是按锻炼的身体部位分组的运动列表，则放大视图则是按身体部位分组的运动列表（项目），缩小视图是身体部位的列表（组关键字）。对于较大的数据集，可以缩小并在一页上查看所有组关键字确实可以帮助用户快速访问距离较远的项目，否则可能需要大量滚动操作才能获取它。</value>
+  </data>
+  <data name="NewsContentPara7" xml:space="preserve">
+    <value>光学上的缩放将更改内容的比例和放大率。语义式缩放可在按关键字分组的项目以及关键字列表之间切换呈现的内容的语义（意思）。每当你要显示较长的分组数据列表时（例如，按身体部位分组的运动或者按首字母分组的名字），都请考虑使用语义式缩放控件。</value>
+  </data>
+  <data name="NewsContentPara8" xml:space="preserve">
+    <value>从以“A”开头的名字滚动到以“Z”开头的名字需要大量轻扫手势。借助语义式缩放控件，仅需两次点击即可实现此目的：一次用于缩小到首字母列表，另一次用于重新放大到“Z”开头的名字。</value>
+  </data>
+  <data name="NewsContentPara9" xml:space="preserve">
+    <value>语义式缩放使用两种不同的分类模式（或缩放级别）来组织和呈现内容：一个是低级别（或放大）模式，该模式通常用于显示平面和全方位结构的项目；另一个是高级别（或缩小）模式，该模式分组显示项目并支持用户快速导航和浏览内容。</value>
+  </data>
+  <data name="HeroTitle" xml:space="preserve">
+    <value>德国是欧洲经济停滞的罪魁</value>
+  </data>
+  <data name="HeroKey" xml:space="preserve">
+    <value>封面图片</value>
+  </data>
+  <data name="News_Topic.Text" xml:space="preserve">
+    <value>新闻类示例</value>
+  </data>
+</root>

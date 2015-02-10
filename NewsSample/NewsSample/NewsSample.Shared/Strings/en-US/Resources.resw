@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DescriptionHeader.Text" xml:space="preserve">
+    <value>Description Text</value>
+  </data>
+  <data name="Group1Subtitle" xml:space="preserve">
+    <value>组子标题: 1</value>
+  </data>
+  <data name="Group1Title" xml:space="preserve">
+    <value>组标题: 1</value>
+  </data>
+  <data name="Group2Subtitle" xml:space="preserve">
+    <value>组子标题: 2</value>
+  </data>
+  <data name="Group2Title" xml:space="preserve">
+    <value>组标题: 2</value>
+  </data>
+  <data name="Group3Subtitle" xml:space="preserve">
+    <value>组子标题: 3</value>
+  </data>
+  <data name="Group3Title" xml:space="preserve">
+    <value>组标题: 3</value>
+  </data>
+  <data name="Group4Subtitle" xml:space="preserve">
+    <value>组子标题: 4</value>
+  </data>
+  <data name="Group4Title" xml:space="preserve">
+    <value>组标题: 4</value>
+  </data>
+  <data name="Group5Subtitle" xml:space="preserve">
+    <value>组子标题: 5</value>
+  </data>
+  <data name="Group5Title" xml:space="preserve">
+    <value>组标题: 5</value>
+  </data>
+  <data name="Group6Subtitle" xml:space="preserve">
+    <value>组子标题: 6</value>
+  </data>
+  <data name="Group6Title" xml:space="preserve">
+    <value>组标题: 6</value>
+  </data>
+  <data name="GroupDescription" xml:space="preserve">
+    <value>组说明: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante</value>
+  </data>
+  <data name="Item1Subtitle" xml:space="preserve">
+    <value>项子标题: 1</value>
+  </data>
+  <data name="Item1Title" xml:space="preserve">
+    <value>项标题: 1</value>
+  </data>
+  <data name="Item2Subtitle" xml:space="preserve">
+    <value>项子标题: 2</value>
+  </data>
+  <data name="Item2Title" xml:space="preserve">
+    <value>项标题: 2</value>
+  </data>
+  <data name="Item3Subtitle" xml:space="preserve">
+    <value>项子标题: 3</value>
+  </data>
+  <data name="Item3Title" xml:space="preserve">
+    <value>项标题: 3</value>
+  </data>
+  <data name="Item4Subtitle" xml:space="preserve">
+    <value>项子标题: 4</value>
+  </data>
+  <data name="Item4Title" xml:space="preserve">
+    <value>项标题: 4</value>
+  </data>
+  <data name="Item5Subtitle" xml:space="preserve">
+    <value>项子标题: 5</value>
+  </data>
+  <data name="Item5Title" xml:space="preserve">
+    <value>项标题: 5</value>
+  </data>
+  <data name="Item6Subtitle" xml:space="preserve">
+    <value>项子标题: 6</value>
+  </data>
+  <data name="Item6Title" xml:space="preserve">
+    <value>项标题: 6</value>
+  </data>
+  <data name="Item7Subtitle" xml:space="preserve">
+    <value>项子标题: 7</value>
+  </data>
+  <data name="Item7Title" xml:space="preserve">
+    <value>项标题: 7</value>
+  </data>
+  <data name="Item8Subtitle" xml:space="preserve">
+    <value>项子标题: 8</value>
+  </data>
+  <data name="Item8Title" xml:space="preserve">
+    <value>项标题: 8</value>
+  </data>
+  <data name="ItemContent" xml:space="preserve">
+    <value>Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat</value>
+  </data>
+  <data name="ItemContentFormat" xml:space="preserve">
+    <value>项内容:  {0}\n\n{0}\n\n{0}\n\n{0}\n\n{0}\n\n{0}\n\n{0}</value>
+  </data>
+  <data name="ItemDescription" xml:space="preserve">
+    <value>项描述: Pellentesque porta, mauris quis interdum vehicula, urna sapien ultrices velit, nec venenatis dui odio in augue. Cras posuere, enim a cursus convallis, neque turpis malesuada erat, ut adipiscing neque tortor ac erat.</value>
+  </data>
+  <data name="ItemSubTitle.Text" xml:space="preserve">
+    <value>项子标题</value>
+  </data>
+  <data name="ItemTitle.Text" xml:space="preserve">
+    <value>项标题</value>
+  </data>
+  <data name="LongText.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper.</value>
+    <comment>“Section1DescriptionText”重复了三次。</comment>
+  </data>
+  <data name="Section1DescriptionText.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper.</value>
+  </data>
+  <data name="Section1Header.Header" xml:space="preserve">
+    <value>Today Top</value>
+  </data>
+  <data name="Section1Subtitle.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit nonumy sed consectetuer ising elit, sed diam</value>
+  </data>
+  <data name="Section2Header.Header" xml:space="preserve">
+    <value>Recent News</value>
+  </data>
+  <data name="Section3Header.Header" xml:space="preserve">
+    <value>Catalogs</value>
+  </data>
+  <data name="Section3Subtitle.Text" xml:space="preserve">
+    <value>节子标题</value>
+  </data>
+  <data name="Section4Header.Header" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Section2UnderTitle.Text" xml:space="preserve">
+    <value>Quisque in porta lorem dolor amet sed consectetuer ising elit, sed diam non my nibh uis mod wisi quip.</value>
+  </data>
+  <data name="NavigationFailedExceptionMessage" xml:space="preserve">
+    <value>Navigation Failed Exception</value>
+  </data>
+  <data name="Hub.Header" xml:space="preserve">
+    <value>News Sample</value>
+  </data>
+  <data name="HubSection1.Header" xml:space="preserve">
+    <value>Top News</value>
+  </data>
+  <data name="HubSection2.Header" xml:space="preserve">
+    <value>Latest News</value>
+  </data>
+  <data name="HubSection3.Header" xml:space="preserve">
+    <value>Catalogs</value>
+  </data>
+  <data name="HubSection4.Header" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="ChangeLang.Text" xml:space="preserve">
+    <value>Change Language</value>
+  </data>
+  <data name="FavList.Text" xml:space="preserve">
+    <value>Favorite List</value>
+  </data>
+  <data name="RecentRead.Text" xml:space="preserve">
+    <value>Recent Read</value>
+  </data>
+  <data name="FavListTitle" xml:space="preserve">
+    <value>Favorite List</value>
+  </data>
+  <data name="ReadListTitle" xml:space="preserve">
+    <value>Recent Read List</value>
+  </data>
+  <data name="AddFav.Label" xml:space="preserve">
+    <value>Add Fav</value>
+  </data>
+  <data name="AddFavSuccessText" xml:space="preserve">
+    <value>Add favorite success.</value>
+  </data>
+  <data name="HubTitleText" xml:space="preserve">
+    <value>News Sample</value>
+  </data>
+  <data name="RemoveFav.Label" xml:space="preserve">
+    <value>Remove Fav</value>
+  </data>
+  <data name="RemoveFavSuccessText" xml:space="preserve">
+    <value>Remove favorite success.</value>
+  </data>
+  <data name="Header.Text" xml:space="preserve">
+    <value>News Sample</value>
+  </data>
+  <data name="ShareIcon.Label" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="ShareDesc" xml:space="preserve">
+    <value>Share you a news</value>
+  </data>
+  <data name="ShareTitle" xml:space="preserve">
+    <value>News Sample</value>
+  </data>
+  <data name="SaveSD.Label" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="HTMLContent" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;&lt;html lang='en' xmlns='http://www.w3.org/1999/xhtml'&gt;&lt;head&gt;    &lt;meta charset='utf-8' /&gt;    &lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;    Use the WebView control to host web content in your app. Note that the control behavior has changed starting with Windows 8.1. See below for details.&lt;/div&gt;&lt;br/&gt;&lt;div&gt;    WebView is not a Control subclass and thus does not have a control template. The display area is constrained by the Width and Height properties.&lt;/div&gt;&lt;br/&gt;&lt;div&gt;    Although WebView is not a Control subclass, it can receive keyboard input focus and participate in the tab sequence. It provides a Focus method and GotFocus and LostFocus events, but it has no tab-related properties. Its position in the tab sequence is the same as its position in the XAML document order. The tab sequence includes all elements in the WebView content that can receive input focus.&lt;/div&gt;&lt;br/&gt;&lt;img src="ms-appx-web:///Assets/WebImg.png"  align="center" alt="This is a picture." onclick='onImgClick(this)'/&gt;&lt;br/&gt;&lt;br/&gt;&lt;div&gt;    As indicated in the Events table, WebView doesn’t support most of the user input events inherited from UIElement, such as KeyDown, KeyUp, and PointerPressed. A common workaround to this problem is to use WebView.InvokeScript (InvokeScriptAsync starting in Windows 8.1) with eval to use the HTML event handlers, and to use window.external.notify from the HTML event handler to notify the application using WebView.ScriptNotify.&lt;/div&gt;&lt;br/&gt;&lt;div&gt;    WebView does not support the ms-appdata scheme, although it does support the ms-appx-web scheme, which you can use to load content files from your app package.&lt;/div&gt;&lt;div&gt;    Additionally, WebView does not currently support some HTML5 features including AppCache, IndexedDB, programmatic access to the Clipboard, or geolocation.&lt;/div&gt;&lt;br/&gt;&lt;script type='text/javascript'&gt;var onImgClick = function(a){window.external.notify(a.src);};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="SaveSDSuccessText" xml:space="preserve">
+    <value>Save news file success.</value>
+  </data>
+  <data name="NoSD" xml:space="preserve">
+    <value>No available SD card</value>
+  </data>
+  <data name="LoadingGrid.Text" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="FavListSubtitle" xml:space="preserve">
+    <value>This is Favorite List</value>
+  </data>
+  <data name="ReadListSubtitle" xml:space="preserve">
+    <value>This is Recent Read</value>
+  </data>
+  <data name="Section3HeaderText.Text" xml:space="preserve">
+    <value>News List</value>
+  </data>
+  <data name="HubSection1HeaderText" xml:space="preserve">
+    <value>Today Top</value>
+  </data>
+  <data name="HubSection2HeaderText" xml:space="preserve">
+    <value>Recent News</value>
+  </data>
+  <data name="HubSection3HeaderText" xml:space="preserve">
+    <value>Catalogs</value>
+  </data>
+  <data name="HubSection4HeaderText" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="NewsContentPara1" xml:space="preserve">
+    <value>Use the WebView control to host web content in your app. Note that the control behavior has changed starting with Windows 8.1. See below for details.</value>
+  </data>
+  <data name="NewsContentPara10" xml:space="preserve">
+    <value>The semantic zoom interaction is performed with the pinch and stretch gestures (moving the fingers farther apart zooms in and moving them closer together zooms out), or by holding the Ctrl key down while scrolling the mouse scroll wheel, or by holding the Ctrl key down (with the Shift key, if no numeric keypad is available) and pressing the plus (+) or minus (-) key.</value>
+  </data>
+  <data name="NewsContentPara2" xml:space="preserve">
+    <value>WebView is not a Control subclass and thus does not have a control template. The display area is constrained by the Width and Height properties.</value>
+  </data>
+  <data name="NewsContentPara3" xml:space="preserve">
+    <value>Although WebView is not a Control subclass, it can receive keyboard input focus and participate in the tab sequence. It provides a Focus method and GotFocus and LostFocus events, but it has no tab-related properties. Its position in the tab sequence is the same as its position in the XAML document order. The tab sequence includes all elements in the WebView content that can receive input focus.</value>
+  </data>
+  <data name="NewsContentPara4" xml:space="preserve">
+    <value>As indicated in the Events table, WebView doesn’t support most of the user input events inherited from UIElement, such as KeyDown, KeyUp, and PointerPressed. A common workaround to this problem is to use WebView.InvokeScript (InvokeScriptAsync starting in Windows 8.1) with eval to use the HTML event handlers, and to use window.external.notify from the HTML event handler to notify the application using WebView.ScriptNotify.</value>
+  </data>
+  <data name="NewsContentPara5" xml:space="preserve">
+    <value>WebView does not support the ms-appdata scheme, although it does support the ms-appx-web scheme, which you can use to load content files from your app package. Additionally, WebView does not currently support some HTML5 features including AppCache, IndexedDB, programmatic access to the Clipboard, or geolocation.</value>
+  </data>
+  <data name="NewsContentPara6" xml:space="preserve">
+    <value>A semantic zoom control allows the user to zoom between two different semantic views of the same data set. One view contains a list of items grouped by some key, and the other view contains a list of group keys. Tapping a group key zooms back into the items in that group. If the data set is a list of physical exercises grouped by the body part that each one benefits, then the zoomed-in view would be a list of exercises grouped by body part (the items) and the zoomed-out view would be a list of body parts (the group keys). With a large data set, being able to zoom out and see all the group keys on one page really helps the user to quickly access a distant item that would otherwise take lots of scrolling to reach.</value>
+  </data>
+  <data name="NewsContentPara7" xml:space="preserve">
+    <value>Optical zooming alters the scale and magnification of content. Semantic zooming switches the semantics (the meaning) of the content presented between items grouped by key, and a list of those keys. Consider using a semantic zoom control whenever you want to display a long list of grouped data (for example, exercises grouped by body part, or names grouped by initial).</value>
+  </data>
+  <data name="NewsContentPara8" xml:space="preserve">
+    <value>Scrolling from names beginning with 'A' to a name beginning with 'Z' may take a large number of swipe gestures. With a semantic zoom control, it can take as few as two taps: one to zoom out to the list of initials, and a second to zoom back into the 'Z's.</value>
+  </data>
+  <data name="NewsContentPara9" xml:space="preserve">
+    <value>Semantic zoom uses two distinct modes of classification (or zoom levels) for organizing and presenting the content: one low-level (or zoomed in) mode that is typically used to display items in a flat, all-up structure and another, high-level (or zoomed out) mode that displays items in groups and enables a user to quickly navigate and browse through the content.</value>
+  </data>
+  <data name="HeroTitle" xml:space="preserve">
+    <value>Being Bad Europeans</value>
+  </data>
+  <data name="HeroKey" xml:space="preserve">
+    <value>Hero Image</value>
+  </data>
+  <data name="News_Topic.Text" xml:space="preserve">
+    <value>News Sample</value>
+  </data>
+</root>

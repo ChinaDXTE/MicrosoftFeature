@@ -1,0 +1,12 @@
+﻿<Application
+    x:Class="NewsSample.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="using:NewsSample.Common"
+    xmlns:local="using:NewsSample">
+    <Application.Resources>
+        <common:BoolenToVisibilityConverter x:Key="vc"/>
+        <common:BoolenToColorConverter x:Key="cc"/>
+        <common:BoolenToColorConverterWP x:Key="ccwp"/>
+    </Application.Resources>
+</Application>

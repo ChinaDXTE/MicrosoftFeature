@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7f469c7b-1f5a-4337-8f54-6f1bf897ab3a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>NewsSample</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\BoolenToColorConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\BoolenToColorConverterWP.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\BoolenToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\FileEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Global.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Globalization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\GroupStyleSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\LocalSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\MainTileUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Notifications.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NotificationsEx\BadgeContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NotificationsEx\Common.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NotificationsEx\ContentInterfaces.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NotificationsEx\TileContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NotificationsEx\ToastContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ReadListUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\RoamingDataUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ShareContractEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\TemplateSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\TileUitl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ToastUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\SampleDataSource.cs" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\BadgeLogo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\check.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DomesticNews.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\EntertainmentNews.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FinacialNews.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\InternationalNews.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\LatestNews.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\mediumtile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SmallLogo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\smalltile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\splash-Phone-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\splash-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Square71x71Logo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\squaretile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\StoreLogo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\tile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\TopNews.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Top_News.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WebImg.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WebImg2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\WideLogo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData.json" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\LightGray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MediumGray.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\DarkGray.png" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleDataCN.json" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en-US\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\zh-CN\Resources.resw" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,67 @@
+﻿<Page
+    x:Class="NewsSample.ItemPage"
+    DataContext="{Binding DefaultViewModel.Item, RelativeSource={RelativeSource Self}}"
+    d:DataContext="{Binding Groups[0].Items[0], Source={d:DesignData Source=../NewsSample.Shared/DataModel/SampleData.json, Type=data:SampleDataSource}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NewsSample"
+    xmlns:data="using:NewsSample.Data"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="Light" Background="White" Foreground="Black">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo></ContinuumNavigationTransitionInfo>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- 标题面板 -->
+        <StackPanel Visibility="Collapsed" Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock x:Uid="Header" Text="application name" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0" />
+        </StackPanel>
+
+        <!--TODO: 内容应放置在以下网格
+                  中以显示当前项的详细信息-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="0">
+            <WebView x:Name="NewsBrowser" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Hidden" VerticalAlignment="Stretch" IsHitTestVisible="true" Margin="0"/>
+            <Grid x:Name="LoadingGrid" Background="#FFFFFFFF">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="1">
+                    <ProgressBar Margin="20,0" IsIndeterminate="True"/>
+                    <TextBlock x:Uid="LoadingGrid" Text="正在加载" FontSize="32" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar x:Name="commandBar" Foreground="Black" Background="White">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Name="AddFav" x:Uid="AddFav" Icon="Add" Label="Add Fav" Tag="AddFav" Click="AppBarClick"/>
+                <AppBarButton x:Name="RemoveFav" x:Uid="RemoveFav" Icon="Remove" Label="Remove Fav" Tag="RemoveFav" Click="AppBarClick"/>
+                <AppBarButton x:Uid="ShareIcon" Icon="ReShare" Label="Share" Tag="Share" Click="AppBarClick"/>
+                <AppBarButton x:Uid="SaveSD" Icon="Save" Label="Save" Tag="Save" Click="AppBarClick"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

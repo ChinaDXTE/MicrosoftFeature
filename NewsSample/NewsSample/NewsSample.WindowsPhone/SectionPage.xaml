@@ -1,0 +1,82 @@
+﻿<Page
+    x:Class="NewsSample.SectionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NewsSample"
+    xmlns:data="using:NewsSample.Data"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding DefaultViewModel.Group, RelativeSource={RelativeSource Self}}"
+    d:DataContext="{Binding Groups[0], Source={d:DesignData Source=../NewsSample.Shared/DataModel/SampleData.json, Type=data:SampleDataSource}}"
+    RequestedTheme="Light" Background="White" Foreground="Black">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <!--
+        此网格用作定义两行的页面的根面板:
+        * 行 0 包含页面标题
+        * 行 1 包含其他页面布局
+    -->
+    <Grid>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- 标题面板 -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock x:Uid="Header" Text="News Sample" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0" Foreground="Black"/>
+            <TextBlock Text="{Binding Title}" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" TextWrapping="NoWrap" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Foreground="Black"/>
+        </StackPanel>
+
+        <ListView
+            x:Name="itemListView"
+            AutomationProperties.AutomationId="ItemListView"
+            AutomationProperties.Name="Items In Group"
+            TabIndex="1"
+            Grid.Row="1"
+            ItemsSource="{Binding Items}"
+            IsItemClickEnabled="True"
+            ItemClick="ItemView_ItemClick"
+            SelectionMode="None"
+            IsSwipeEnabled="false"
+            Margin="19,0,0,0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" Margin="0,9.5,0,0" Width="79" Height="79">
+                            <Grid>
+                                <Image Source="{Binding ImagePath}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
+                                <Image Source="ms-appx:///Assets/check.png" Visibility="Collapsed" Width="32" VerticalAlignment="Top" HorizontalAlignment="Right" Height="32"/>
+                            </Grid>
+                        </Border>
+                        <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="14.5,0,0,0">
+                            <TextBlock Text="{Binding Title}" Style="{ThemeResource ListViewItemTextBlockStyle}" TextTrimming="CharacterEllipsis" Foreground="{Binding Read, Converter={StaticResource ccwp}}"/>
+                            <TextBlock Text="{Binding Description}" Style="{ThemeResource ListViewItemContentTextBlockStyle}" Foreground="{Binding Read, Converter={StaticResource ccwp}}" TextWrapping="WrapWholeWords" TextTrimming="WordEllipsis" MaxLines="2"/>
+                            <!--<TextBlock Text="{Binding Subtitle}" Style="{ThemeResource ListViewItemSubheaderTextBlockStyle}"/>-->
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
