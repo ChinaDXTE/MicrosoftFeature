@@ -1,0 +1,3 @@
+MainPackage=F:\work\project\windows demo\trunk\Video Sample\Video Sample\Video Sample.Windows\bin\Release\Video Sample.Windows_1.0.0.2_Bundle\Video Sample.Windows_1.0.0.2_AnyCPU.appx
+SymbolPackage=F:\work\project\windows demo\trunk\Video Sample\Video Sample\Video Sample.Windows\AppPackages\Video Sample.Windows_1.0.0.2_Test\Video Sample.Windows_1.0.0.2_AnyCPU.appxsym
+ResourcePack=F:\work\project\windows demo\trunk\Video Sample\Video Sample\Video Sample.Windows\bin\Release\Video Sample.Windows_1.0.0.2_Bundle\Video Sample.Windows_1.0.0.2_language-en.appx

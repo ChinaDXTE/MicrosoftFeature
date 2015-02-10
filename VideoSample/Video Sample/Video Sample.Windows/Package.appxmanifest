@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="1da96c5e-0ea9-4010-a1e1-831cb0d604f3" Publisher="CN=wang-f" Version="1.0.0.2" />
+  <Properties>
+    <DisplayName>Video Sample.Windows</DisplayName>
+    <PublisherDisplayName>wang-f</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Video_Sample.Windows.App">
+      <m2:VisualElements DisplayName="Video Sample.Windows" Square150x150Logo="Assets\squaretile-sdk.png" Square30x30Logo="Assets\smalltile-Windows-sdk.png" Description="Video Sample.Windows" ForegroundText="light" BackgroundColor="#00b2f0">
+        <m2:DefaultTile DefaultSize="wide310x150Logo" Square310x310Logo="Assets\largetile-Windows-sdk.png" Wide310x150Logo="Assets\tile-sdk.png" Square70x70Logo="Assets\mediumtile-Windows-sdk.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+            <m2:ShowOn Tile="square310x310Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\splash-Windows-sdk.png" />
+      </m2:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="Video Sample.Windows.App">
+          <BackgroundTasks>
+            <Task Type="audio" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="removableStorage" />
+    <Capability Name="videosLibrary" />
+    <Capability Name="musicLibrary" />
+  </Capabilities>
+</Package>

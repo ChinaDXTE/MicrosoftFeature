@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="Video_Sample.AudioPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Video_Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+	<Page.Resources>
+		<DataTemplate x:Key="DataTemplate1">
+			<Grid Height="60" Width="300" Background="#FF636363">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="353*"/>
+				</Grid.ColumnDefinitions>
+                <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="40" Source="ms-appx:///Assets/VideoSample/MediaIcon/windows8.1.png" Margin="10"/>
+				<StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Margin="20,0,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="{Binding Song}" FontSize="20"/>
+                    <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="16" Opacity="0.8" VerticalAlignment="Top" Margin="0,5,0,0"/>
+				</StackPanel>
+			</Grid>
+		</DataTemplate>
+	</Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="110"/>
+    		<ColumnDefinition Width="663*"/>
+    	</Grid.ColumnDefinitions>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="120*"/>
+    		<RowDefinition Height="557*"/>
+    		<RowDefinition Height="91*"/>
+    	</Grid.RowDefinitions>
+    	<StackPanel HorizontalAlignment="Left" Grid.Column="1" Orientation="Horizontal" Margin="-57
+                    ,40">
+            <Button Style="{StaticResource NavigationBackButtonNormalStyle}" Click="Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+            <TextBlock TextWrapping="Wrap" Text="{Binding Video_PlayPage}" FontSize="40" VerticalAlignment="Center" Margin="15,0,0,0"/>
+    	</StackPanel>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="482*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="300">
+                <Image HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300" Source="ms-appx:///Assets/VideoSample/MediaIcon/recommend8.png"/>
+                <TextBlock TextWrapping="Wrap" Text="  学会欣赏音乐，就要把握听音乐的几个角度:单纯的美感和享受、关注音乐情感和作者形象的表达、了解作品的创作背景及时代精神和民族传统、以特别的审美态度听特别的音乐。" FontSize="21.333" VerticalAlignment="Top" Margin="0,15,0,0"/>
+            </StackPanel>
+            <Grid Grid.Column="1" Margin="30,0,0,0">
+                <GridView x:Name="gridView" SelectionChanged="gridView_SelectionChanged" ItemTemplate="{StaticResource DataTemplate1}"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

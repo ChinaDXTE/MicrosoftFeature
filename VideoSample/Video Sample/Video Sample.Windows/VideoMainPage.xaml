@@ -1,0 +1,143 @@
+﻿<Page
+    x:Class="Video_Sample.VideoMainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Video_Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+	<Page.Resources>
+		<DataTemplate x:Key="DataTemplate1">
+			<StackPanel Orientation="Horizontal" Width="212">
+                <Button Content="Button" Style="{StaticResource NavigationBackButtonNormalStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Video_Video}" VerticalAlignment="Center" Margin="20,0,0,0"/>
+			</StackPanel>
+		</DataTemplate>
+	</Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    	<Hub Header="{Binding}" HeaderTemplate="{StaticResource DataTemplate1}" Padding="37,60,40,0">
+            <HubSection Header="{Binding YouMayLike}" Width="790" Padding="110,40,40,44">
+    			<DataTemplate>
+    				<Grid Margin="-10,0,0,0">
+    					<Grid.ColumnDefinitions>
+    						<ColumnDefinition Width="*"/>
+    						<ColumnDefinition Width="*"/>
+    						<ColumnDefinition Width="*"/>
+    						<ColumnDefinition Width="*"/>
+    						<ColumnDefinition Width="*"/>
+    					</Grid.ColumnDefinitions>
+    					<Grid.RowDefinitions>
+    						<RowDefinition Height="*"/>
+    						<RowDefinition Height="*"/>
+    					</Grid.RowDefinitions>
+    					<Grid Grid.ColumnSpan="2" Height="390" Grid.RowSpan="2" Width="270" Margin="10,5" Tapped="Grid_Tapped">
+    						<Image Source="ms-appx:///Assets/VideoSample/Video/变形金刚.png"/>
+    						<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    							<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="变形金刚" VerticalAlignment="Center" FontSize="24" Margin="15,3,0,3" Foreground="White"/>
+    						</Grid>
+    					</Grid>
+                        <Grid Margin="10,10,10,5" Grid.Column="2" Width="130" Height="190" Tapped="Grid_Tapped">
+    						<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/蜘蛛侠.png"/>
+    						<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    							<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="蜘蛛侠" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    						</Grid>
+    					</Grid>
+                        <Grid Margin="10,10,-3,5" Grid.Column="3" Width="130" Height="190" Tapped="Grid_Tapped">
+    						<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/英雄.png"/>
+    						<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    							<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="英雄" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    						</Grid>
+    					</Grid>
+                        <Grid Margin="10,10,10,5" Grid.Column="4" Width="130" Height="190" Tapped="Grid_Tapped">
+    						<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/少林寺.png"/>
+    						<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    							<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="少林寺" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    						</Grid>
+    					</Grid>
+                        <Grid Margin="10,5,10,10" Grid.Column="2" Width="130" Height="190" Grid.Row="1" Tapped="Grid_Tapped">
+    						<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/海盗.png"/>
+    						<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    							<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="加勒比海盗" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    						</Grid>
+    					</Grid>
+                        <Grid Margin="5,10,10,10" Grid.Column="3" Width="130" Height="190" Grid.Row="1" Tapped="Grid_Tapped">
+    						<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/憨豆.png"/>
+    						<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    							<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="憨豆007" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    						</Grid>
+    					</Grid>
+                        <Grid Margin="5,10,10,10" Grid.Column="4" Width="130" Height="190" Grid.Row="1" Tapped="Grid_Tapped">
+    						<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/哈利波特.png"/>
+    						<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    							<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="哈利波特" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    						</Grid>
+    					</Grid>
+    				</Grid>
+    			</DataTemplate>
+    		</HubSection>
+            <HubSection Header="{Binding Movie}" Padding="110,40,80,44">
+    			<DataTemplate>
+    				<Grid Margin="-10,0,0,0">
+    					<Grid Margin="0">
+    						<Grid.ColumnDefinitions>
+    							<ColumnDefinition Width="*"/>
+    							<ColumnDefinition Width="*"/>
+    							<ColumnDefinition Width="*"/>
+    							<ColumnDefinition Width="*"/>
+    							<ColumnDefinition Width="*"/>
+    						</Grid.ColumnDefinitions>
+    						<Grid.RowDefinitions>
+    							<RowDefinition Height="*"/>
+    							<RowDefinition Height="*"/>
+    						</Grid.RowDefinitions>
+                            <Grid Grid.ColumnSpan="2" Height="390" Grid.RowSpan="2" Width="270" Margin="10,5" Tapped="Grid_Tapped">
+    							<Image Source="ms-appx:///Assets/VideoSample/Video/哈利波特.png"/>
+    							<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    								<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="哈利波特" VerticalAlignment="Center" FontSize="24" Margin="15,3,0,3" Foreground="White"/>
+    							</Grid>
+    						</Grid>
+                            <Grid Margin="10,10,10,5" Grid.Column="2" Width="130" Height="190" Tapped="Grid_Tapped">
+    							<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/憨豆.png"/>
+    							<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    								<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="憨豆007" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    							</Grid>
+    						</Grid>
+                            <Grid Margin="10,10,-3,5" Grid.Column="3" Width="130" Height="190" Tapped="Grid_Tapped">
+    							<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/海盗.png"/>
+    							<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    								<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="加勒比海盗" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    							</Grid>
+    						</Grid>
+                            <Grid Margin="10,10,10,5" Grid.Column="4" Width="130" Height="190" Tapped="Grid_Tapped">
+    							<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/蜘蛛侠.png"/>
+    							<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    								<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="蜘蛛侠" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    							</Grid>
+    						</Grid>
+                            <Grid Margin="10,5,10,10" Grid.Column="2" Width="130" Height="190" Grid.Row="1" Tapped="Grid_Tapped">
+    							<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/变形金刚.png"/>
+    							<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    								<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="变形金刚" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    							</Grid>
+    						</Grid>
+                            <Grid Margin="5,10,10,10" Grid.Column="3" Width="130" Height="190" Grid.Row="1" Tapped="Grid_Tapped">
+    							<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/少林寺.png"/>
+    							<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    								<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="少林寺" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    							</Grid>
+    						</Grid>
+                            <Grid Margin="5,10,10,10" Grid.Column="4" Width="130" Height="190" Grid.Row="1" Tapped="Grid_Tapped">
+    							<Image VerticalAlignment="Top" Source="ms-appx:///Assets/VideoSample/Video/英雄.png"/>
+    							<Grid Height="35" VerticalAlignment="Bottom" Margin="0" Background="Black" Opacity="0.5">
+    								<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="英雄" VerticalAlignment="Center" FontSize="17.333" Margin="15,0,0,0" Foreground="White"/>
+    							</Grid>
+    						</Grid>
+    					</Grid>
+    				</Grid>
+    			</DataTemplate>
+    		</HubSection>
+    	</Hub>
+
+    </Grid>
+</Page>

@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="Video_Sample.SettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Video_Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="White" Margin="0,26.333,0,-26.333">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="77*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="33*"/>
+			<RowDefinition Height="287*"/>
+		</Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Video_Setting}" VerticalAlignment="Center" FontSize="26.667" Grid.Column="1" Margin="0" Foreground="Black"/>
+        <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.RowSpan="2" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" Margin="0">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF6F6F6F" Text="{Binding Video_LanguageSetting}" FontSize="17.333"/>
+        	<ComboBox x:Name="cmbLanguage" 
+        		Margin="0" FontSize="24" Width="220"
+        		SelectionChanged="cmbLanguage_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Background="White" BorderBrush="#FF3C3C3C" Foreground="#FF3C3C3C" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF6F6F6F" Text="{Binding Video_DownloadPath}" FontSize="17.333" Margin="0,5,0,0"/>
+            <ComboBox x:Name="cmbPhotoPath" Margin="0,0,-120,0"  
+        		FontSize="24" Width="220" SelectionChanged="cmbPhotoPath_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF3C3C3C" Foreground="#FF3C3C3C">
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+</Page>

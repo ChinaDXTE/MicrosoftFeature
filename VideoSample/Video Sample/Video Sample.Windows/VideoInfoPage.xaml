@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="Video_Sample.VideoInfoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Video_Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="59*"/>
+    		<RowDefinition Height="auto"/>
+    		<RowDefinition Height="179*"/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="110"/>
+    		<ColumnDefinition Width="auto"/>
+    		<ColumnDefinition Width="245*"/>
+    		<ColumnDefinition Width="259*"/>
+    		<ColumnDefinition Width="260*"/>
+    		<ColumnDefinition Width="260*"/>
+    	</Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="3" Margin="-59,0,0,0" Grid.Column="1">
+        	<Button x:Name="back" Style="{StaticResource NavigationBackButtonNormalStyle}" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="back_Click"/>
+        	<TextBlock TextWrapping="Wrap" Text="变形金刚" FontSize="40" VerticalAlignment="Center" Margin="20,0,0,0"/>
+        </StackPanel>
+    	<Grid Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+    		<Image HorizontalAlignment="Left" Height="284" VerticalAlignment="Top" Width="260" Source="ms-appx:///Assets/VideoSample/Video/变形金刚.png"/>
+    	</Grid>
+    	<StackPanel Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="2" Margin="0,1,0,0">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Video_Starring}" VerticalAlignment="Bottom" FontSize="16" Height="19" Width="48" Margin="30,15,0,0"/>
+    		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="希亚·拉博夫 / 梅根·福克斯 / 乔什·杜哈明" VerticalAlignment="Bottom" FontSize="16" Height="19" Width="283" Margin="30,0,0,0"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Video_Direct}" VerticalAlignment="Bottom" FontSize="16" Height="19" Width="48" Margin="30,13,0,0"/>
+    		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="迈克尔·贝" VerticalAlignment="Bottom" FontSize="16" Margin="30,0,0,0"/>
+    		<TextBlock TextWrapping="Wrap" Text="《变形金刚》（Transformers）真人电影是一部写实风格的科幻电影。该影片是以20世纪80年代的美国孩之宝玩具公司发行的变形金刚动画.." FontSize="14.667" VerticalAlignment="Bottom" Height="53" Margin="30,15,61,0"/>
+    		<Grid HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="60" Background="#FF0F5895" Tapped="Grid_Tapped" Margin="30,15,0,0">
+    			<Image HorizontalAlignment="Left" VerticalAlignment="Center" Source="ms-appx:///Assets/VideoSample/Play/play.png" Height="50" Width="45" Margin="15,0,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="播放" VerticalAlignment="Center" FontSize="33.333" Margin="80,7,0,0"/>
+    		</Grid>
+    	</StackPanel>
+    	<Grid Grid.ColumnSpan="5" Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,15,0,0">
+    		<Grid.RowDefinitions>
+    			<RowDefinition Height="11*"/>
+    			<RowDefinition Height="80*"/>
+    		</Grid.RowDefinitions>
+    		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="影片截图" VerticalAlignment="Top" FontSize="24" Margin="0,10,0,0"/>
+    		<StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,0">
+    			<Image Height="273" Width="466" Source="ms-appx:///Assets/VideoSample/Video/jingang2.png" HorizontalAlignment="Left"/>
+    			<Image Height="266" Width="454" Source="ms-appx:///Assets/VideoSample/Video/jingang.png" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+    			<Image Source="ms-appx:///Assets/VideoSample/Video/jingang3.png" HorizontalAlignment="Left" Margin="20,0,0,0" Height="268" Width="187"/>
+    		</StackPanel>
+    	</Grid>
+
+    </Grid>
+</Page>

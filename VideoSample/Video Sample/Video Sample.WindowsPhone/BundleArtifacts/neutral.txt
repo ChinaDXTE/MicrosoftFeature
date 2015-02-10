@@ -1,0 +1,4 @@
+MainPackage=F:\work\project\windows demo\trunk\Video Sample\Video Sample\Video Sample.WindowsPhone\bin\Release\Video Sample.WindowsPhone_1.0.0.5_Bundle\Video Sample.WindowsPhone_1.0.0.5_AnyCPU.appx
+SymbolPackage=F:\work\project\windows demo\trunk\Video Sample\Video Sample\Video Sample.WindowsPhone\AppPackages\Video Sample.WindowsPhone_1.0.0.5_Test\Video Sample.WindowsPhone_1.0.0.5_AnyCPU.appxsym
+ResourcePack=F:\work\project\windows demo\trunk\Video Sample\Video Sample\Video Sample.WindowsPhone\bin\Release\Video Sample.WindowsPhone_1.0.0.5_Bundle\Video Sample.WindowsPhone_1.0.0.5_language-en.appx
+ResourcePack=F:\work\project\windows demo\trunk\Video Sample\Video Sample\Video Sample.WindowsPhone\bin\Release\Video Sample.WindowsPhone_1.0.0.5_Bundle\Video Sample.WindowsPhone_1.0.0.5_scale-100.appx

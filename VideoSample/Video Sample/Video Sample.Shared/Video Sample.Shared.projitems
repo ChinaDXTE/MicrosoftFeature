@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>b50919ce-a9d0-4a40-9331-cf79881723b8</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Video_Sample</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Background\BackgroundDownload.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Background\BackgroundTransfers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Background\BackgroundUpload.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Common.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\CommonString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ContentInterfaces.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Global.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Globalization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\LocalSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Notifications.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\TileContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\AudioData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\CommonData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\AudioMain\AudioMainDownload.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\AudioMain\AudioMainLike.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\AudioMain\AudioMainLoacl.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\back-windows.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\BadgeLogo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\download.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Home\audio.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Home\set.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\largetile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Logo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan10.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan11.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan12.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan5.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan6.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan7.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan8.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\bangdan9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\PopularClassic.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\PopularClassic1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\PopularClassic2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend10.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend11.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend12.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend13.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend14.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend15.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend5.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend6.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend7.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\recommend8.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\type1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\type2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\type3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\windows8.1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\你的样子.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\千千阙歌.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\可惜不是你.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\成龙.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\王力宏.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\王心凌.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\稳稳的幸福.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\红豆.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\老男孩.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\MediaIcon\郑伊健.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Media\红豆.mp3" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\mediumtile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\mediumtile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\background.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\Download.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\DownloadPause.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\DownloadPlay.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\next.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\PageBack.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\PageBack1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\pause.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\play.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\PlayPage-.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\PlayPage.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\previous.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Play\Set.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\smalltile-Phone-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\smalltile-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\splash-Phone-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\splash-Windows-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\squaretile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\tile-sdk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\user.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\video.mp4" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\video.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\jingang.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\jingang2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\jingang3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\变形金刚.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\哈利波特.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\少林寺.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\憨豆.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\海盗.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\英雄.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VideoSample\Video\蜘蛛侠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\en-us\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\zh-cn\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+  </ItemGroup>
+</Project>
