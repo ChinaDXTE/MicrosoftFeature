@@ -1,0 +1,14 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OTOSample">
+    <SolidColorBrush x:Key="textForeground">#454545</SolidColorBrush>
+    <SolidColorBrush x:Key="blocktBackground">#3399cc</SolidColorBrush>
+    <SolidColorBrush x:Key="blocktTextForeground">#ffffff</SolidColorBrush>
+    <SolidColorBrush x:Key="blocktNumBackground">#f7f7f7</SolidColorBrush>
+    <SolidColorBrush x:Key="blocktNumLineBackground">#DEDFE7</SolidColorBrush>
+    <SolidColorBrush x:Key="blocktNumPriceForeground">#ED1C24</SolidColorBrush>
+    <SolidColorBrush x:Key="blocktNumBtnBackground">#3399CC</SolidColorBrush>
+    <SolidColorBrush x:Key="blocktNumBtnNoBackground">#CCCEDB</SolidColorBrush>
+    
+</ResourceDictionary>

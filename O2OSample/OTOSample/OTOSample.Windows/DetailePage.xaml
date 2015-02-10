@@ -1,0 +1,103 @@
+﻿<Page
+    x:Class="OTOSample.DetailePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OTOSample.Windows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch" Height="72" Background="{StaticResource blocktBackground}">
+            <Button x:Name="btnBack" Margin="39,12" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="btnBack_Click"/>
+            <TextBlock x:Name="pageTitle" Style="{StaticResource HeaderTextBlockStyle}" VerticalAlignment="Center"/>
+        </StackPanel>
+        <ScrollViewer Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollMode="Auto"
+                      ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Auto">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Orientation="Vertical" Width="400">
+                    <Image Source="{Binding Image}" Height="200" Stretch="UniformToFill" Margin="20"/>
+                    <StackPanel Orientation="Horizontal" Margin="20">
+                        <TextBlock x:Name="txtTitle" Foreground="{StaticResource textForeground}" FontSize="22" Text="{Binding Title}" Margin="0,10" FontWeight="Black" />
+                        <TextBlock Foreground="{StaticResource textForeground}" FontSize="24" Text="{Binding PhoneNum}" Margin="10,10" FontStyle="Oblique"/>
+                    </StackPanel>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Text="{Binding Address}" Margin="20,10,0,20" TextWrapping="Wrap"/>
+                    <Grid Margin="20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Foreground="{StaticResource textForeground}" FontSize="24" Text="类型和数量" />
+                            <TextBlock Grid.Column="1" Foreground="{StaticResource textForeground}" FontSize="16" Text="(最多购买10件)" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                        </Grid>
+                        <Grid Grid.Row="1" Background="{StaticResource blocktNumBackground}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Grid.Row="1" Grid.ColumnSpan="2" Height="2" Fill="{StaticResource blocktNumLineBackground}"/>
+                            <TextBlock Grid.Column="0" Grid.Row="0" Foreground="{StaticResource textForeground}" FontSize="22" Margin="0,10" Text="数量：" VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="0" Grid.Row="2" Foreground="{StaticResource textForeground}" FontSize="22" Margin="0,10" Text="总价：" VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="1" Grid.Row="2" Foreground="{StaticResource blocktNumPriceForeground}" 
+                                        FontSize="22" Margin="10,10" Text="{Binding Price}" HorizontalAlignment="Right"/>
+                            <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,0">
+                                <Grid x:Name="sub" Width="32" Height="32" Background="{StaticResource blocktNumBtnNoBackground}" Tapped="sub_Tapped">
+                                    <Image Source="ms-appx:///Assets/appbar.minus.rest.png"/>
+                                </Grid>
+                                <TextBox x:Name="txtBoxNum" IsHitTestVisible="False" Text="1" Margin="10" BorderBrush="{StaticResource blocktNumLineBackground}" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Center" FontStretch="Expanded"/>
+                                <Grid x:Name="add" Width="32" Height="32" Background="{StaticResource blocktNumBtnBackground}" Tapped="add_Tapped">
+                                    <Image Source="ms-appx:///Assets/appbar.add.rest.png"/>
+                                </Grid>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                    <Grid Height="42" Width="110" Background="{StaticResource blocktNumBtnBackground}" HorizontalAlignment="Right" Margin="0,0,20,0" Tapped="Grid_Tapped">
+                        <TextBlock Foreground="{StaticResource textForeground}" FontSize="22" Margin="0,4" Text="立即支付" VerticalAlignment="Center" TextAlignment="Center"/>
+                    </Grid>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Vertical" Width="450" Margin="40,20,20,20">
+                    <TextBlock Text="本单详情" Foreground="Black" FontSize="32"/>
+                    <TextBlock Foreground="Red" FontSize="18" TextWrapping="Wrap" Text="亲爱的用户，为满足您的消费需求，经与商家协商，将有效期延长至2014年12月28日，其中不可用日期：2014年1月30日至2月5日，感谢您对美团的支持与理解，祝您愉快~"/>
+                    <TextBlock Text="购买须知" Foreground="Black" FontSize="32" Margin="0,30,0,30"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾有效期：2013.11.13 至 2015.6.10"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾有效期内周末、法定节假日通用"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾团券使用时间：09:30-22:00"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾无需预约，消费高峰时可能需要等位"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾可叠加使用"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾不兑现、不找零"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾可免费使用包间"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾仅限堂食，不提供餐前外带，餐毕未吃完可免费打包"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾团购用户不可同时享受商家其他优惠"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾酒水饮料等问题，请致电商家咨询，以商家反馈为准"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,0,0,20"  Text="◾免费提供20个停车位"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Width="400" Orientation="Vertical" Margin="40,20,20,20">
+                    <TextBlock Text="商家信息" Foreground="Black" FontSize="32"/>
+                    <TextBlock Foreground="{StaticResource textForeground}" FontSize="18" Margin="0,10,0,20" TextWrapping="Wrap" Text="纸上不谈兵，在纸上烤肉，给钟情于烧烤的美食家一次全新的美食体验。用特制的烧烤纸烧烤丰富食材，更换纸张更卫生，不粘不糊更美观，少油少烟更健康，烤肉烤鱼更方便。来到金真子，不但可以体验这绿色健康美味的纸上烤肉，同时还能品尝到西点、韩日料理、麻辣烫、煎档以及特色面点等近百种特色自助美食"/>
+                    <TextBlock Text="商家位置" Foreground="Black" FontSize="32"/>
+                    <Image Source="ms-appx:///Assets/map.jpg" Margin="0,20,0,0"/>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

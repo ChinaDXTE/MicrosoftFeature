@@ -1,0 +1,19 @@
+﻿<SettingsFlyout
+    x:Class="OTOSample.Setting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OTOSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="320">
+
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Margin="10,30" Width="240" Content="{Binding o2o_ShardContract}" FontSize="22" Tapped="btnShard_Tapped"/>
+        <Button Grid.Row="1" Margin="10,30" Width="240" Content="{Binding o2o_OrderTrack}" FontSize="22" Tapped="btnOrderTrack_Tapped"/>
+    </Grid>
+</SettingsFlyout>
